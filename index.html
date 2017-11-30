@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SUSTech CSE5009 Machine Learning </title>
+    <link rel="stylesheet" href="Styles/semanticui/semantic.min.css">
+    <link rel="stylesheet" href="Styles/common.css">
+    <srcipt src="Styles/semanticui/semantic.min.js"></srcipt>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        .main.container {
+            padding: 2em 0em 7em;
+        }
+        .masthead.segment {
+            padding: 3em 0em;
+        }
+        code {
+            font-size: 0.9em;
+            background: rgb(229, 230, 231);
+            border-radius: 3px;
+        }
+        @media only screen and (min-width: 1200px) {
+            .ui.container {
+                width: 1136px;
+            }
+        }
+        .new,
+        .new-1017 {
+            background: rgba(20, 220, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="ui masthead vertical segment">
+        <center>
+            <h1 class="ui header">Computer Graphics (计算机图形学)
+                <div class="sub header">
+                    SUSTech 2018 Summer Semester
+                    <br>CSE4001(CS405)
+                    <br>Lecture and Lab Materials
+                    <br>
+                    <a href="http://cse.sustc.edu.cn/cn/people/view/people_id/63/sort_id/9/pid/" target="_blank">Elvis Sze-Yeung Liu</a>
+                </div>
+            </h1>
+        </center>
+    </div>
+
+    <div class="main ui container">
+        <div class="ui positive message">
+            <p>QQ Group: </p>
+        </div>
+        
+        <!-- Introduction -->
+        <h2 class="ui dividing header">Course Information</h2>
+        <ul>
+            <li>
+                <b>Credits:</b> 3
+            </li>
+            <li>
+                <b>Hours:</b> 64
+            </li>
+            <li>
+                <b>Language:</b> English
+            </li>
+            <li>
+                <b>Prerequisites:</b> Linear Algebra, Probability and Statistics, Data Structure
+            </li>
+            <li>
+                <b>Objectives:</b>
+                <ul>
+                    <li> Fundamental knowledge about machine learning and pattern recognition, from Bayesian approaches to deep learning frameworks through lectures, quizzes and assignments</li>
+                    <li> Machine learning system development methods with Matlab/Python through labs and projects</li>
+                    <li> Model-based and data-driven machine learning system design and integration skills through the final project, literature surveys and reports</li>
+                </ul>
+            </li>
+
+            <li>
+                <span class="new-0919">
+                    <b>Textbook:</b>
+                    <br>
+                    <a href="https://www.microsoft.com/en-us/research/people/cmbishop/#prml-book" target="_blank">Computer Graphics Principles and Practice</a>, 3rd Ed, by John F. Hughes, and et. 2013 Addison-Wesley.
+                    <br>
+                    (<a href="http://prml.github.io/" target="_blank"> Supplementary materials</a>)
+                </span>
+            </li>
+            <li> 
+                <b>Lecture:</b> Tuesday 8:00 am - 9:50 am Teaching Building 1 Room 405 
+            </li>
+            <li> 
+                <b>Lab:</b> Wednesday 10:20 am – 12:10 pm LiYuan Park Room 406 
+            </li>
+        </ul>
+
+        <!-- Grading Policy -->
+        <h2 class="ui dividing header">Grading Policy 📝</h2>
+        <ul>
+            <li>In-class test (20%)</li>
+            <li>Assignment (20%), 8~10 times</li>
+            <li>Quiz (20%), 5~10 times</li>
+            <li>Project (20%), 2 in a group</li>
+            <li>Final project (20%)</li>
+            <li>You can submit your assignments <a href="http://sakai.sustc.edu.cn" target="_blank"> here</a>
+        </ul>
+
+        <!-- Lecture Notes -->
+        <h2 class="ui dividing header">
+            Lecture Notes 📜
+        </h2>
+        <table class="ui striped compact celled table">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Resources</th>
+                    <th>Homework</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td>
+                        <a href="">note</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2D and 3D Graphics</td>
+                    <td class="new-0919">
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td>
+                        <a href="">note</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mathematics of Computer Graphics</td>
+                    <td class="new-0926">
+                        <a href="Lecture/.pdf" target="_blank">Slide1</a>, 
+                        <a href="Lecture/.pdf" target="_blank">Slide2</a>
+                    </td>
+                    <td class="new-0926">
+                        <a href="">note</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Transformation in 2D and 3D</td>
+                    <td class="new-1011">
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td class="new-1011">note</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Camera and Viewing</td>
+                    <td class="new-1017">
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td class="new-1017">note</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Colour and Lighting</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Shading and Ray Tracing</td>
+                    <td>
+                    	<a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Texture Mapping</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Real-time Shadows</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Introduction to Computer Games</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Collision Detection</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Spatial Data</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Presentation of final projects</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Special topics I - Industrial Talk</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Special topics II - Industrial Talk</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Revision</td>
+                    <td>
+                        <a href="Lecture/.pdf" target="_blank">Slides</a>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!-- Lab Notes -->
+        <h2 class="ui dividing header">
+            Lab Notes 📜
+        </h2>
+        <table class="ui striped compact celled table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Topic</th>
+                    <th>Resources</th>
+                    <th>Manuals</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Decision Tree</td>
+                    <td> 
+                        <a href="Lab/CS405-Machine_Learning_Lab1_note1.pdf" target="_blank">slide1, </a>
+                        <a href="Lab/CS405-Machine_Learning_Lab1_note2.pdf" target="_blank">slide2</a>
+                    </td>
+                    <td> <a href="Lab/CS405-Machine_Learning_Lab1.pdf" target="_blank">note</a></td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>Clustering</td>
+                    <td> </td>
+                    <td> 
+                        <a href="Lab/CS405-Machine_Learning_Lab2.pdf" target="_blank">note</a>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>3</td>
+                    <td>Neural Network</td>
+                    <td>
+                        <a href="Lab/NN_dataset.rar" target="_blank">dataset</a>
+                    </td>
+                    <td> 
+                        <a href="Lab/CS405-Machine_Learning_Lab3.pdf" target="_blank">note</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SVMs</td>
+                    <td>
+                        <a href="" target="_blank"></a>
+                    </td>
+                    <td> 
+                        <a href="Lab/CS405-Machine_Learning_Lab4.pdf" target="_blank">note</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+            
+            
+        <h2 class="ui dividing header">Final Project</h2>
+        <ul>
+            <li>
+                <a href="Project/DL/index.html">Deep Learning</a>
+            </li>
+            <li>
+                <a href="Project/GAN/index.html">Generative Adversarial Networks</a>
+            </li>
+            <li>
+                <a href="Project/RL/index.html">Reinforcement Learning</a>
+            </li>
+        </ul>
+
+        <!-- Reference Reading -->
+        <h2 class="ui dividing header">Reference Reading 📖</h2>
+        <ul>
+            <li>
+                <b>Books</b>
+                <ul>
+                    <li> Deep Learning, by Bengio</li>
+                    <li> Reinforcement Learning: An Introduction, by Richard S. Sutton</li>
+                    <li> The Elements of Statistical Learning Data Mining, Inference, and Prediction</li>
+                </ul>
+            </li>
+            <li>
+                <b>Papers</b>
+                <ul>
+                    <li>Ghahramani Z. Probabilistic machine learning and artificial intelligence. Nature, 2015, 521(7553):452-9</li>
+                    <li>Lecun Y, Bengio Y, Hinton G. Deep learning. Nature, 2015, 521(7553):436-44</li>
+                    <li>Littman M L. Reinforcement learning improves behaviour from evaluative feedback. Nature, 2015, 521(7553):445-51. </li>
+                </ul>
+            </li>
+            <br>
+        </ul>
+
+        <div class="ui divider"></div>
+        <p>
+            <i>Last updated: 2017/<span class="new-1011">10/25</span></i>
+        </p>
+    </div>
+</body>
+
+</html>
